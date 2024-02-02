@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>match</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+      <h1>Match the Following</h1>
+    </header>
+
+    <div class="main-column">
+        <div class="row">
+        <div class="container" draggable="true" ondragstart="drag(event)" >
+            <p>23+48</p>
+        </div>
+      
+        <button class="button" id="q1" onclick="handleButtonClick()"> </button>
+        </div>
+
+        <div class="row">
+            <div class="container" draggable="true" ondragstart="drag(event)" >
+              <p>45+16</p>
+            </div>
+        
+            <button class="button" id="q2" onclick="handleButtonClick()"> </button>
+        </div>
+
+        <div class="row">
+            <div class="container" draggable="true" ondragstart="drag(event)" >
+              <p>13+24</p>
+            </div>
+        
+            <button class="button"  id="q3" onclick="handleButtonClick()"> </button>
+        </div>
+  
+        <div class="row">
+            <div class="container" draggable="true" ondragstart="drag(event)" >
+                <p>12+9</p>
+            </div>
+          
+            <button class="button" id="q4" onclick="handleButtonClick()"> </button>
+        </div>
+
+    </div>
+        
+    <div class="line"></div>
+
+
+    <div class="main-column">
+        <div class="row">
+          <button class="button" id="o1" > </button>
+
+          <div class="container" ondragover="allowDrop(event)" ondrop="drop(event)" >
+            <p>21</p>
+          </div>
+          
+        </div>
+
+        <div class="row">
+            <button class="button" id="o2" onclick="handleButtonClick()"> </button>
+  
+            <div class="container" ondragover="allowDrop(event)" ondrop="drop(event)" >
+              <p>37</p>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <button class="button" id="o3" onclick="handleButtonClick()"> </button>
+  
+            <div class="container" ondragover="allowDrop(event)" ondrop="drop(event)" >
+              <p>71</p>
+            </div>
+            
+          </div>
+  
+          <div class="row">
+              <button class="button" id="o4" onclick="handleButtonClick()"> </button>
+    
+              <div class="container" ondragover="allowDrop(event)" ondrop="drop(event)" >
+                <p>61</p>
+              </div>
+              
+            </div>
+
+    </div>
+
+    
+    <div class="submit-section">
+        <button class="button1" onclick="tot3()">SUBMIT</button>
+    </div>
+    <script src="script3.js"></script>
+
+    
+</body>
+</html>

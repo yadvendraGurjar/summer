@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Fredoka One', cursive, sans-serif;
+    overflow: hidden;
+}
+
+.login-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+    z-index: -1;
+}
+
+.avatar {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 50%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out; 
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 43, 136);
+}
+
+h2, label{
+    opacity: 0;
+    animation: dropIn 1s ease-out forwards; 
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    animation-delay: 0.5s; 
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    color: rgb(78, 54, 114);
+    margin-bottom: 15px;
+    animation-delay: 0.5s;
+}
+
+input {
+    opacity: 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px;
+    animation: dropIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+button {
+    opacity: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #4c72af;
+    color: rgb(33, 8, 8);
+    border: gold;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: dropIn 1s ease-out forwards, wiggle 2s linear infinite;
+    animation-delay: 0.5s,10s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@keyframes dropIn {
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}

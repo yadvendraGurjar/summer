@@ -1,0 +1,50 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('dbg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.dashboard {
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    color: #ef4e4e;
+}
+
+canvas {
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+h2, h3 {
+    color: #ff6f61;
+}
+
+p {
+    margin: 8px 0;
+}
+
+span {
+    font-weight: bold;
+    color: #5e5e5e;
+}
+
