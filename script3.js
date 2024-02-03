@@ -41,16 +41,18 @@ console.log(draggedElement);
           }
   console.log(correctAnswer);
 
+  var targetContainer = ev.target.closest('.container');
+
   if (draggedElement && correctAnswer !== null) {
       var userAnswer = ev.target.textContent.trim();
       console.log(userAnswer);
       if (userAnswer === correctAnswer) {
           draggedElement.style.backgroundColor = "green";
-          ev.target.style.backgroundColor = "green";
+          targetContainer.style.backgroundColor = "green";
           score++;
       } else {
           draggedElement.style.backgroundColor = "red";
-          ev.target.style.backgroundColor = "red";
+          targetContainer.style.backgroundColor = "red";
       }
   }
 }

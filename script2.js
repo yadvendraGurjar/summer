@@ -22,9 +22,10 @@ function changeColor(container) {
 function createContainer() {
     const container = document.createElement('div');
     container.className = 'container';
-    container.innerText = getRandomNumber();
-    if(container.innerText < corranswer){
-        corranswer= container.innerText;
+    let x = getRandomNumber();
+    container.innerText = x;
+    if(x < corranswer){
+        corranswer= x;
     }
     container.style.backgroundColor = '#FFC0CB';
 
@@ -41,6 +42,7 @@ function createContainers() {
     for (let i = 0; i < 8; i++) {
         const container = createContainer();
         containerWrapper.appendChild(container);
+        console.log(corranswer);
     }
 }
 
